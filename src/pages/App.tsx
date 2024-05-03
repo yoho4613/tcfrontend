@@ -5,6 +5,7 @@ import TermsAndConditions from "./TermsAndConditions.tsx";
 import NotFoundPage from "./NotFoundPage.tsx";
 import ContactUs from "./ContactUs.tsx";
 import BoardPage from "./BoardPage.tsx";
+import PostPage from "./Post/PostPage.tsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/TermsAndConditions" Component={TermsAndConditions} />
         <Route path="/ContactUs" Component={ContactUs} />
         <Route path="/board" Component={BoardPage} />
+        <Route path="/board/post/:id" Component={PostPage} />
         <Route Component={NotFoundPage} />
       </Routes>
     </Router>

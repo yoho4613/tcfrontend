@@ -1,41 +1,28 @@
 import React, { useEffect, useState } from "react";
+import { getAllPosts } from "../config/api.ts";
 
 const BoardPage = () => {
-  const url = "http://localhost:8000/api/v1/board/post/getAllPosts";
   const [posts, setPosts] = useState<Post[]>([]);
 
-  const getAllPosts = async () => {
-    const res = await fetch(url)
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res;
-      })
-      .then((res) => res.json())
-      .catch((err) => console.log(err));
-
-    console.log(res);
-    return res;
-  };
-
   useEffect(() => {
-    getAllPosts().then((res) => setPosts(res));
+    getAllPosts("/board/post/getAllPosts").then((res) => setPosts(res));
   }, []);
 
   return (
     <div>
-      <div className="p-4">
+      <div className="p-2">
         <h1 className="text-4xl mb-4">Capsule Board</h1>
         {posts?.map((post, index) => (
-          <a
-            href={`/board/post/${post.id}`}
-            key={index}
+          <div
+            key={post.id}
             className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
           >
-            <h2 className="text-2xl mb-2">{post.title}</h2>
-            <p className="text-gray-700 text-base">{post.content}</p>
-          </a>
+            <a href={`/board/post/${post.id}`} key={index}>
+              <h2 className="text-lg font-bold mb-2">{post.title}</h2>
+              <p className="text-gray-700 text-sm">{post.content}</p>
+              <p>{new Date(post.createdAt).toLocaleDateString()}</p>
+            </a>
+          </div>
         ))}
       </div>
     </div>
