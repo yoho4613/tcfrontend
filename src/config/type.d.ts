@@ -6,4 +6,11 @@ type Post = {
   image: string;
   createdAt: string;
   authorId: string;
+  author: User;
+};
+
+type User = {
+  id: string;
+  username: string;
+  email: string;
 };

@@ -26,6 +26,7 @@ const PostPage = () => {
         <h1 className="font-extrabold text-2xl">{post?.title}</h1>
         <p>{post?.content}</p>
         <p>{post?.description}</p>
+        <p>{post?.author.username}</p>
       </div>
     </div>
   );

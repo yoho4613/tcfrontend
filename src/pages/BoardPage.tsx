@@ -20,7 +20,10 @@ const BoardPage = () => {
             <a href={`/board/post/${post.id}`} key={index}>
               <h2 className="text-lg font-bold mb-2">{post.title}</h2>
               <p className="text-gray-700 text-sm">{post.content}</p>
-              <p>{new Date(post.createdAt).toLocaleDateString()}</p>
+              <div className="flex justify-between text-sm">
+                <p>{new Date(post.createdAt).toLocaleDateString()}</p>
+                <p>{post.author.username}</p>
+              </div>
             </a>
           </div>
         ))}

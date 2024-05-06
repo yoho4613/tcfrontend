@@ -1,7 +1,5 @@
-const url = "http://localhost:8000/api/v1";
-
 export const getAllPosts = async (routePath: string) => {
-  const res = await fetch(url + routePath)
+  const res = await fetch(process.env.REACT_APP_API_URL + routePath)
     .then((res) => {
       if (!res.ok) {
         throw new Error("Network response was not ok");
@@ -16,7 +14,7 @@ export const getAllPosts = async (routePath: string) => {
 };
 
 export const getPostById = async (routePath: string, id: string) => {
-  const res = await fetch(`${url}${routePath}/${id}`)
+  const res = await fetch(`${process.env.REACT_APP_API_URL}${routePath}/${id}`)
     .then((res) => {
       if (!res.ok) {
         throw new Error("Network response was not ok");
