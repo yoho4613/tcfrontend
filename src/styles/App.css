@@ -1,0 +1,79 @@
+.LandingPage-background {
+  background-image: url('/public/images/TClogo2024web.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Site-background {
+  background-color: black;
+  min-height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.Site-background::-webkit-scrollbar {
+  display: none;
+}
+
+.Site-container {
+  text-align: center;
+  justify-content: space-evenly;
+  flex: 1;
+  height: auto;
+  overflow-y: hidden;
+}
+
+.Site-ScrollContainer {
+  text-align: center;
+  justify-content: space-evenly;
+  flex: 1;
+  height: auto;
+}
+
+.Site-ScrollContainer::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+.Landing-title {
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  padding-bottom: 5%;
+}
+
+.Site-title {
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.Site-content {
+  flex: 1;
+  line-height: 1.5;
+  font-size: 24px;
+  color: white;
+  padding-bottom: 5%;
+  overflow-y: auto;
+  background-color: black;
+}
+
+.Site-TermsAndConditions {
+  color: white;
+  font-size: 24px;
+  padding: 3%;
+  text-align: justify;
+}

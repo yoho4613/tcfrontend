@@ -1,0 +1,51 @@
+Terms and conditions
+
+
+By using our service, you agree to these terms and conditions. Please read them carefully.
+
+1. Introduction
+Our service provides a secure way to store and manage your digital assets on the Ethereum blockchain. Transactions are transparent and can be verified on Etherscan. 
+
+2. Account Creation and Management
+You must provide a valid blockchain address to create an account. You are responsible for maintaining the security of your account and password.
+
+3. Service Usage
+Our service allows you to manage digital assets in USD. While backend transactions may involve cryptocurrencies, all charges to you will be in USD.
+
+4. Intellectual Property
+Content created and shared on our platform is subject to copyright laws. We claim no intellectual property rights over the content you provide.
+
+5. Dispute Resolution
+We are not responsible for resolving any disputes between users. Users are responsible for their interactions on our platform.
+
+6. Compliance
+We may introduce compliance measures like KYC in the future to enhance user security and comply with legal requirements.
+
+7. Amendments and Termination
+
+======================
+
+We reserve the right to modify these terms at any time. Your continued use of the service after any modification signifies your acceptance of the new terms.
+Privacy Policy
+
+1. Information We Collect
+We collect device information, blockchain addresses, and transaction details related to your blockchain address.
+
+2. How We Use Your Information
+Your information is used to provide and improve our services, including maintaining your account and enabling transactions.
+
+3. Sharing and Disclosure
+We do not share personal information with third parties except as required by law or to provide our services.
+
+4. Data Protection
+We implement security measures to protect your information from unauthorized access, alteration, or destruction.
+
+5. Your Rights
+You have the right to access, correct, or delete your personal information stored with us at any time.
+
+6. Cookies and Other Technologies
+We may use cookies and similar technologies to enhance your experience on our platform.
+
+7. Changes to This Policy
+We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on our platform.
+
