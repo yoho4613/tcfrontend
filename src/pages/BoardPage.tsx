@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getAllPosts } from "../config/api";
+import { getAllPosts } from "../config/api.ts";
 import Navbar from "../Components/Navbar/Navbar";
 import { useSearchParams } from "react-router-dom";
 
